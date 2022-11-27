@@ -17,7 +17,7 @@ class TransactionItem extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
             border: Border.all(
               color: kTextFadedColor,
@@ -59,27 +59,28 @@ class TransactionItem extends StatelessWidget {
                 const SizedBox(
                   height: 10,
                 ),
-                SizedBox(
-                  child: RichText(
-                    text: TextSpan(
-                      text: 'Reference: ',
-                      children: [
-                        TextSpan(
-                          text: refNumber,
-                          style: const TextStyle(
-                            fontSize: 15,
-                            color: kTextGrey,
-                          ),
-                        )
-                      ],
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Reference: ",
                       style: const TextStyle(
-                        fontSize: 15,
+                        fontSize: 13,
                         color: kTextBlack,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    textAlign: TextAlign.center,
-                  ),
+                    Expanded(
+                      child: Text(
+                        refNumber,
+                        style: const TextStyle(
+                          fontSize: 13,
+                          color: kTextGrey,
+                        ),
+                      ),
+                    )
+                  ],
                 ),
               ],
             ))
