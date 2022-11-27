@@ -40,12 +40,14 @@ class WelcomeScreen extends StatelessWidget {
                     height: 250,
                     width: 250,
                     decoration: BoxDecoration(
-                        color: kSecondaryColor,
-                        borderRadius: BorderRadius.circular(
-                          175,
-                        ),
-                        image: const DecorationImage(
-                            image: AssetImage("assets/images/logo.webp"))),
+                      color: kSecondaryColor,
+                      borderRadius: BorderRadius.circular(
+                        175,
+                      ),
+                      image: const DecorationImage(
+                        image: AssetImage("assets/images/logo.webp"),
+                      ),
+                    ),
                   ),
                   const SizedBox(
                     height: 30,

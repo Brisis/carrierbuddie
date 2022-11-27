@@ -42,7 +42,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Email',
-                    hintText: 'Enter valid email id as abc@gmail.com'),
+                    hintText: 'Example: abc@gmail.com'),
               ),
             ),
             const Padding(
@@ -51,7 +51,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'National ID',
-                    hintText: 'Enter valid national id as 00-000000-a-00'),
+                    hintText: 'Enter valid national ID as 00-000000-X-00'),
               ),
             ),
             const Padding(
