@@ -133,8 +133,9 @@ class _LoginViewState extends State<LoginView> {
                 child: const Text(
                   "Login",
                   style: TextStyle(
-                    fontSize: kLargeTextSize,
+                    fontSize: kHeaderTextSize,
                     color: Colors.white,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),

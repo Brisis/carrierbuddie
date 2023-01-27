@@ -120,6 +120,9 @@ class NavTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       tileColor: kWhiteColor,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10.0),
+      ),
       onTap: onTap,
       leading: FaIcon(
         icon,

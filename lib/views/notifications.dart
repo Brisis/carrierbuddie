@@ -1,4 +1,3 @@
-import 'package:carrierbuddie/helpers/constants.dart';
 import 'package:carrierbuddie/views/app_wrapper.dart';
 import 'package:carrierbuddie/widgets/notification_item.dart';
 import 'package:flutter/material.dart';

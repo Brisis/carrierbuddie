@@ -16,8 +16,8 @@ class ClothesWashingServiceView extends StatelessWidget {
             image: "assets/images/user.webp",
             name: "Tracey Jones",
             title: "Expert Washer",
-            rating: 4.5,
-            jobs: 125,
+            rating: 1.5,
+            jobs: 5,
             rate: 15,
           );
         },

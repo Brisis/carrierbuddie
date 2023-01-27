@@ -16,8 +16,8 @@ class StandingsServiceView extends StatelessWidget {
             image: "assets/images/user.webp",
             name: "Tracey Jones",
             title: "Expert Stander",
-            rating: 4.5,
-            jobs: 125,
+            rating: 3.5,
+            jobs: 20,
             rate: 15,
           );
         },

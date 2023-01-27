@@ -122,8 +122,9 @@ class _RegistrationViewState extends State<RegistrationView> {
                   child: const Text(
                     "Register",
                     style: TextStyle(
-                      fontSize: kLargeTextSize,
+                      fontSize: kHeaderTextSize,
                       color: Colors.white,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),

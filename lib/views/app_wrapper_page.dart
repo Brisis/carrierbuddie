@@ -1,4 +1,5 @@
 import 'package:carrierbuddie/helpers/constants.dart';
+import 'package:carrierbuddie/views/home.dart';
 import 'package:flutter/material.dart';
 
 class AppWrapperPage extends StatefulWidget {
@@ -51,26 +52,19 @@ class _AppWrapperPageState extends State<AppWrapperPage> {
                     ),
                   ),
                   horizontalSpace(),
-                  Stack(
-                    children: [
-                      const CircleAvatar(
-                        backgroundImage:
-                            AssetImage("assets/images/profile.jpg"),
-                        maxRadius: 20,
-                      ),
-                      Positioned(
-                        right: 3,
-                        child: Container(
-                          height: 10,
-                          width: 10,
-                          decoration: BoxDecoration(
-                            color: Colors.red,
-                            border: Border.all(color: kWhiteColor, width: 2),
-                            borderRadius: BorderRadius.circular(5),
-                          ),
+                  IconButton(
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        routeTransition(
+                          const HomeView(),
                         ),
-                      )
-                    ],
+                      );
+                    },
+                    icon: const Icon(
+                      Icons.add,
+                      size: kIconSize,
+                      color: kPrimaryColor,
+                    ),
                   ),
                 ],
               ),

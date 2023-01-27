@@ -12,6 +12,8 @@ const kVerifiyColor = Colors.blue;
 const kWhiteColor = Colors.white;
 const kFadedBlack = Colors.black54;
 const kBlackColor = Colors.black;
+const kGoldenColor = Color(0xFFFD875D);
+const kDangerColor = Color(0xFFFF0000);
 
 const kHeaderTextSize = 16.0;
 const kLargeTextSize = 24.0;
