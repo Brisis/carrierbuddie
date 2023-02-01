@@ -1,21 +1,22 @@
 import 'package:carrierbuddie/helpers/constants.dart';
 import 'package:carrierbuddie/views/app_wrapper_page.dart';
-import 'package:carrierbuddie/widgets/delivery_detail_card.dart';
-import 'package:carrierbuddie/widgets/delivery_item_card.dart';
+import 'package:carrierbuddie/widgets/general_activity_detail_card.dart';
+import 'package:carrierbuddie/widgets/general_activity_item_card.dart';
 import 'package:carrierbuddie/widgets/tracking_detail_card.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class DeliveryActivityView extends StatelessWidget {
-  const DeliveryActivityView({super.key});
+class GeneralActivityView extends StatelessWidget {
+  const GeneralActivityView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return AppWrapperPage(
-      title: "Track Delivery",
+      title: "Track Activity",
       child: ListView(
         children: [
           const Text(
-            "Delivery",
+            "Clothes Washing",
             style: TextStyle(
               fontSize: kLargeTextSize,
               fontWeight: FontWeight.bold,
@@ -45,7 +46,7 @@ class DeliveryActivityView extends StatelessWidget {
                         ),
                         child: const Center(
                           child: Icon(
-                            Icons.directions_bike,
+                            FontAwesomeIcons.handsBubbles,
                             size: 15,
                             color: kWhiteColor,
                           ),
@@ -62,7 +63,7 @@ class DeliveryActivityView extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "Nike Sport Store",
+                      "Tasha Jacobs",
                       style: TextStyle(
                         fontSize: kHeaderTextSize,
                         fontWeight: FontWeight.bold,
@@ -77,7 +78,7 @@ class DeliveryActivityView extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                              "Farfetch.com",
+                              "Pro Washer",
                               style: TextStyle(
                                 fontSize: kMediumTextSize,
                                 color: kFadedBlack,
@@ -85,7 +86,7 @@ class DeliveryActivityView extends StatelessWidget {
                             ),
                             verticalSpace(height: 5),
                             const Text(
-                              "Out for Delivery",
+                              "Out for Washing",
                               style: TextStyle(
                                   fontSize: kMediumTextSize,
                                   fontWeight: FontWeight.bold,
@@ -123,7 +124,7 @@ class DeliveryActivityView extends StatelessWidget {
             ],
           ),
           verticalSpace(height: 30),
-          const DeliveryItemCard(),
+          const GeneralActivityItemCard(),
           verticalSpace(),
           const TrackingDetailCard(),
           verticalSpace(height: 15),
@@ -135,7 +136,7 @@ class DeliveryActivityView extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
-                    "2 Days",
+                    "30 Min",
                     style: TextStyle(
                       fontSize: kLargeTextSize,
                       fontWeight: FontWeight.bold,
@@ -177,7 +178,7 @@ class DeliveryActivityView extends StatelessWidget {
             ],
           ),
           verticalSpace(height: 15),
-          const DeliveryDetailCard(),
+          const GeneralActivityDetailCard(),
         ],
       ),
     );

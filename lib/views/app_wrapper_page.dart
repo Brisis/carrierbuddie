@@ -1,21 +1,17 @@
 import 'package:carrierbuddie/helpers/constants.dart';
-import 'package:carrierbuddie/views/home.dart';
 import 'package:flutter/material.dart';
 
-class AppWrapperPage extends StatefulWidget {
+class AppWrapperPage extends StatelessWidget {
   final Widget child;
   final String title;
+  final Function()? onPressed;
   const AppWrapperPage({
     super.key,
     required this.child,
     required this.title,
+    this.onPressed,
   });
 
-  @override
-  State<AppWrapperPage> createState() => _AppWrapperPageState();
-}
-
-class _AppWrapperPageState extends State<AppWrapperPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,7 +40,7 @@ class _AppWrapperPageState extends State<AppWrapperPage> {
                   horizontalSpace(),
                   Expanded(
                     child: Text(
-                      widget.title,
+                      title,
                       style: const TextStyle(
                         fontSize: kHeaderTextSize,
                         fontWeight: FontWeight.bold,
@@ -53,13 +49,7 @@ class _AppWrapperPageState extends State<AppWrapperPage> {
                   ),
                   horizontalSpace(),
                   IconButton(
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        routeTransition(
-                          const HomeView(),
-                        ),
-                      );
-                    },
+                    onPressed: onPressed,
                     icon: const Icon(
                       Icons.add,
                       size: kIconSize,
@@ -73,7 +63,7 @@ class _AppWrapperPageState extends State<AppWrapperPage> {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
-                child: widget.child,
+                child: child,
               ),
             ),
           ],

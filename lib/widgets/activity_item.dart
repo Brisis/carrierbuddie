@@ -1,5 +1,6 @@
 import 'package:carrierbuddie/helpers/constants.dart';
 import 'package:carrierbuddie/views/activity/delivery_activity.dart';
+import 'package:carrierbuddie/views/activity/general_activity.dart';
 import 'package:flutter/material.dart';
 
 class ActivityItem extends StatelessWidget {
@@ -23,7 +24,7 @@ class ActivityItem extends StatelessWidget {
         onTap: () {
           Navigator.of(context).push(
             routeTransition(
-              const DeliveryActivityView(),
+              const GeneralActivityView(),
             ),
           );
         },

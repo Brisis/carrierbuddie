@@ -1,8 +1,8 @@
 import 'package:carrierbuddie/helpers/constants.dart';
 import 'package:flutter/material.dart';
 
-class DeliveryDetailCard extends StatelessWidget {
-  const DeliveryDetailCard({super.key});
+class GeneralActivityDetailCard extends StatelessWidget {
+  const GeneralActivityDetailCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class DeliveryDetailCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
               Text(
-                "DELIVERY ADDRESS",
+                "ACTIVITY ADDRESS",
                 style: TextStyle(
                   fontSize: kMediumTextSize,
                   color: kFadedBlack,

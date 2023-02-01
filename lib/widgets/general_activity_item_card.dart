@@ -1,8 +1,8 @@
 import 'package:carrierbuddie/helpers/constants.dart';
 import 'package:flutter/material.dart';
 
-class DeliveryItemCard extends StatelessWidget {
-  const DeliveryItemCard({super.key});
+class GeneralActivityItemCard extends StatelessWidget {
+  const GeneralActivityItemCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class DeliveryItemCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "Nike SB BLZR Court",
+                      "Mixed Clothes",
                       style: TextStyle(
                         fontSize: kMediumTextSize,
                         fontWeight: FontWeight.bold,
@@ -44,7 +44,7 @@ class DeliveryItemCard extends StatelessWidget {
                     ),
                     verticalSpace(height: 10),
                     const Text(
-                      "Quantity: 1",
+                      "Quantity: 15",
                       style: TextStyle(
                         fontSize: kMediumTextSize,
                         color: kFadedBlack,
@@ -57,7 +57,7 @@ class DeliveryItemCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     const Text(
-                      "\$2.00",
+                      "\$5.00",
                       style: TextStyle(
                         fontSize: kLargeTextSize,
                         fontWeight: FontWeight.bold,
@@ -65,7 +65,7 @@ class DeliveryItemCard extends StatelessWidget {
                     ),
                     verticalSpace(height: 10),
                     const Text(
-                      "Paypal",
+                      "Paid",
                       style: TextStyle(
                         fontSize: kMediumTextSize,
                         color: kFadedBlack,

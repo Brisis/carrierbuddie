@@ -1,10 +1,10 @@
 import 'package:carrierbuddie/helpers/constants.dart';
 import 'package:carrierbuddie/views/app_wrapper.dart';
-import 'package:carrierbuddie/views/clothes_washing_service/clothes_washing_view.dart';
-import 'package:carrierbuddie/views/delivery_service/delivery_home_view.dart';
-import 'package:carrierbuddie/views/gardening_service/gardening_home_view.dart';
-import 'package:carrierbuddie/views/place_cleaning_service/place_cleaning_home_view.dart';
-import 'package:carrierbuddie/views/standings_service/standings_home_view.dart';
+import 'package:carrierbuddie/views/services/clothes_washing_service/clothes_washing_view.dart';
+import 'package:carrierbuddie/views/services/delivery_service/delivery_home_view.dart';
+import 'package:carrierbuddie/views/services/gardening_service/gardening_home_view.dart';
+import 'package:carrierbuddie/views/services/place_cleaning_service/place_cleaning_home_view.dart';
+import 'package:carrierbuddie/views/services/standings_service/standings_home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
