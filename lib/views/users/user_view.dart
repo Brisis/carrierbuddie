@@ -225,7 +225,7 @@ class GalleryGrid extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 const Text(
-                  "Job Pictures",
+                  "Pictures",
                   style: TextStyle(
                     fontSize: kMediumTextSize,
                     fontWeight: FontWeight.bold,
@@ -282,7 +282,7 @@ class GalleryGrid extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       const Text(
-                        "My Promos",
+                        "Promos",
                         style: TextStyle(
                           fontSize: kSmallerTextSize,
                           fontWeight: FontWeight.bold,
@@ -337,7 +337,7 @@ class GalleryGrid extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       const Text(
-                        "My Videos",
+                        "Videos",
                         style: TextStyle(
                           fontSize: kSmallerTextSize,
                           fontWeight: FontWeight.bold,

@@ -1,5 +1,8 @@
 import 'package:carrierbuddie/helpers/constants.dart';
 import 'package:carrierbuddie/views/app_wrapper_user.dart';
+import 'package:carrierbuddie/views/profile/activity_pictures.dart';
+import 'package:carrierbuddie/views/profile/activity_videos.dart';
+import 'package:carrierbuddie/views/profile/promo_pictures.dart';
 import 'package:flutter/material.dart';
 
 class ProfileView extends StatelessWidget {
@@ -227,7 +230,7 @@ class GalleryGrid extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 const Text(
-                  "Job Pictures",
+                  "My Pictures",
                   style: TextStyle(
                     fontSize: kMediumTextSize,
                     fontWeight: FontWeight.bold,
@@ -235,7 +238,13 @@ class GalleryGrid extends StatelessWidget {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      routeTransition(
+                        const ActivityPicturesView(),
+                      ),
+                    );
+                  },
                   style: ButtonStyle(
                     padding:
                         MaterialStateProperty.all(const EdgeInsets.all(10.0)),
@@ -292,7 +301,13 @@ class GalleryGrid extends StatelessWidget {
                         ),
                       ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).push(
+                            routeTransition(
+                              const PromoPicturesView(),
+                            ),
+                          );
+                        },
                         style: ButtonStyle(
                           padding: MaterialStateProperty.all(
                               const EdgeInsets.all(10.0)),
@@ -347,7 +362,13 @@ class GalleryGrid extends StatelessWidget {
                         ),
                       ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).push(
+                            routeTransition(
+                              const ActivityVideosView(),
+                            ),
+                          );
+                        },
                         style: ButtonStyle(
                           padding: MaterialStateProperty.all(
                               const EdgeInsets.all(10.0)),

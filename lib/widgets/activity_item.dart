@@ -39,9 +39,16 @@ class ActivityItem extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              CircleAvatar(
-                maxRadius: 20,
-                backgroundImage: AssetImage(image),
+              Container(
+                height: 40,
+                width: 40,
+                decoration: BoxDecoration(
+                  color: kPrimaryColor,
+                  borderRadius: BorderRadius.circular(5),
+                  image: DecorationImage(
+                    image: AssetImage(image),
+                  ),
+                ),
               ),
               horizontalSpace(),
               Expanded(

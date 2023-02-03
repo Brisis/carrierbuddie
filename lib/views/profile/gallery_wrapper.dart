@@ -1,4 +1,3 @@
-import 'package:carrierbuddie/views/app_wrapper.dart';
 import 'package:flutter/material.dart';
 
 class GalleryView extends StatelessWidget {
@@ -10,11 +9,17 @@ class GalleryView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppWrapper(
-      index: 0,
-      child: ListView.builder(
-        itemCount: 10,
-        itemBuilder: (context, index) {
+    return MediaQuery.removePadding(
+      context: context,
+      removeTop: true,
+      child: GridView.builder(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          mainAxisSpacing: 2,
+          crossAxisSpacing: 2,
+          crossAxisCount: 3,
+        ),
+        itemCount: 20,
+        itemBuilder: (BuildContext context, int index) {
           return galleryItem;
         },
       ),
